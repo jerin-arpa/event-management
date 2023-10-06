@@ -6,30 +6,30 @@ import { Link } from 'react-router-dom';
 const HomeEvent = ({ event }) => {
     const { id, image, service_name, description, price, seat } = event;
     return (
-        <div className='rounded-xl shadow-xl'>
+        <div className='rounded-xl shadow-xl bg-cyan-950'>
             <img className='rounded-t-xl w-full h-60' src={image} alt="" />
             <div className='p-5'>
-                <h2 className='text-2xl font-bold mb-2'>{service_name}</h2>
-                <p>{description}</p>
-                <div className='flex justify-between my-6'>
+                <h2 className='text-2xl font-bold mb-2 text-amber-600'>{service_name}</h2>
+                <p className='h-20'>{description}</p>
+                <div className='flex justify-between mt-6'>
                     <div>
                         <div className='flex gap-3'>
                             <div className='flex items-center text-xl'>
-                                <FaMoneyCheck></FaMoneyCheck>
+                                <FaMoneyCheck className='text-amber-600'></FaMoneyCheck>
                             </div>
                             <p className='text-xl font-bold'>{price}</p>
                         </div>
                         <div className='flex gap-3'>
                             <div className='flex items-center text-xl'>
-                                <MdEventSeat></MdEventSeat>
+                                <MdEventSeat className='text-amber-600'></MdEventSeat>
                             </div>
                             <p className='text-xl font-bold'>{seat} seats</p>
                         </div>
                     </div>
 
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center items-center my-3'>
                         <Link to={`/eventDetails/${id}`}>
-                            <button className='btn btn-warning text-white'>Show Details</button>
+                            <button className='btn btn-warning text-white hover:bg-cyan-950 hover:text-white'>Show Details</button>
                         </Link>
                     </div>
                 </div>

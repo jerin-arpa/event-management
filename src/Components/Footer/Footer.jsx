@@ -1,33 +1,33 @@
 const Footer = () => {
     return (
-        <div className="bg-black text-white py-20">
+        <div className="bg-gray-900 text-white py-20">
             <footer className="footer p-10 container mx-auto px-5">
                 <aside>
 
-                    <p>FestCon Management<br />Providing reliable tech since 2021</p>
+                    <p><span className="text-gray-500">FestCon</span> Management<br />Providing reliable tech since 2021</p>
                 </aside>
                 <nav>
-                    <header className="footer-title">Services</header>
+                    <header className="uppercase text-xl text-gray-500 font-bold">Services</header>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>
                     <a className="link link-hover">Marketing</a>
                     <a className="link link-hover">Advertisement</a>
                 </nav>
                 <nav>
-                    <header className="footer-title">Company</header>
+                    <header className="uppercase text-xl text-gray-500 font-bold">Company</header>
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Services</a>
                     <a className="link link-hover">Festival</a>
                 </nav>
                 <nav>
-                    <header className="footer-title">Legal</header>
+                    <header className="uppercase text-xl text-gray-500 font-bold">Legal</header>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
                 <nav>
-                    <header className="footer-title">Explore</header>
+                    <header className="uppercase text-xl text-gray-500 font-bold">Explore</header>
                     <a className="link link-hover">Features</a>
                     <a className="link link-hover">Enterprise</a>
                     <a className="link link-hover">Security</a>

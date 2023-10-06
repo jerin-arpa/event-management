@@ -15,7 +15,7 @@ const EventDetails = () => {
 
                 <div className="flex items-center">
                     <div>
-                        <h2 className="text-3xl font-bold mb-5">{event.service_name}</h2>
+                        <h2 className="text-3xl font-bold mb-5 text-amber-600">{event.service_name}</h2>
                         <p>{event.details_description}</p>
 
 
@@ -56,10 +56,10 @@ const EventDetails = () => {
                             />
                         </div>
 
-                        <div className="flex gap-10">
-                            <button className="btn btn-warning text-white mt-6">Book Now</button>
+                        <div className="flex gap-10 mt-6">
+                            <button className='btn btn-warning btn-outline'>Book Now</button>
                             <Link to='/'>
-                                <button className="btn btn-warning text-white mt-6">GO Home</button>
+                                <button className='btn btn-warning btn-outline'>GO Home</button>
                             </Link>
                         </div>
                     </div>

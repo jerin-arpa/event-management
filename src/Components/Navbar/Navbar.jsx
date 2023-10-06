@@ -5,12 +5,12 @@ const Navbar = () => {
     const navLink = <>
         <li>
             <NavLink to='/' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline" : ""
+                isPending ? "pending" : isActive ? "font-bold text-amber-600 underline" : ""
             }>Home</NavLink>
         </li>
         <li>
             <NavLink to='/about' className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "font-bold underline" : ""
+                isPending ? "pending" : isActive ? "font-bold underline text-amber-600" : ""
             }>About</NavLink>
         </li>
     </>
@@ -29,7 +29,7 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <a className="text-2xl font-extrabold">FestCon Management</a>
+                    <p className="text-2xl font-extrabold"><span className="text-amber-600">FestCon</span> Management</p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-7 px-1">
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link to='/login'>
-                        <button className="btn">Login</button>
+                        <button className="bg-amber-600 border-0 text-white p-1 px-4 rounded-lg">Login</button>
                     </Link>
                 </div>
             </div>
