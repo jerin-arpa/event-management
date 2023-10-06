@@ -1,0 +1,38 @@
+[
+    {
+        "person_id": 1,
+        "name": "John Smith",
+        "image": "john_smith.jpg",
+        "position": "Event Director"
+    },
+    {
+        "person_id": 2,
+        "name": "Emma Davis",
+        "image": "emma_davis.jpg",
+        "position": "Marketing Manager"
+    },
+    {
+        "person_id": 3,
+        "name": "Michael Johnson",
+        "image": "michael_johnson.jpg",
+        "position": "Logistics Coordinator"
+    },
+    {
+        "person_id": 4,
+        "name": "Sarah Williams",
+        "image": "sarah_williams.jpg",
+        "position": "Finance Manager"
+    },
+    {
+        "person_id": 5,
+        "name": "David Lee",
+        "image": "david_lee.jpg",
+        "position": "Artistic Director"
+    },
+    {
+        "person_id": 6,
+        "name": "Lisa Adams",
+        "image": "lisa_adams.jpg",
+        "position": "Sponsorship Manager"
+    }
+]
