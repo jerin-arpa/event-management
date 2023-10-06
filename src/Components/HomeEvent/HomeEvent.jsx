@@ -1,9 +1,10 @@
 import { FaMoneyCheck } from 'react-icons/fa6';
 import { MdEventSeat } from 'react-icons/md';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const HomeEvent = ({ event }) => {
-    const { image, service_name, description, price, seat } = event;
+    const { id, image, service_name, description, price, seat } = event;
     return (
         <div className='rounded-xl shadow-xl'>
             <img className='rounded-t-xl w-full h-60' src={image} alt="" />
@@ -27,7 +28,9 @@ const HomeEvent = ({ event }) => {
                     </div>
 
                     <div className='flex justify-center'>
-                        <button className='btn btn-warning text-white'>Show Details</button>
+                        <Link to={`/eventDetails/${id}`}>
+                            <button className='btn btn-warning text-white'>Show Details</button>
+                        </Link>
                     </div>
                 </div>
 
