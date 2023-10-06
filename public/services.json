@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "service_name": "VIP Festival Experience",
+        "image": "https://i.ibb.co/55TXXnb/IMG-20231006-WA0000.jpg",
+        "description": "Get the ultimate VIP treatment at the festival with exclusive access, front-row seats, and premium amenities.",
+        "price": "$500",
+        "seat": 6000
+    },
+    {
+        "id": 2,
+        "service_name": "General Admission Ticket",
+        "image": "https://i.ibb.co/HnCjpDY/image-2.png",
+        "description": "Access the festival grounds and enjoy the music from designated general admission areas.",
+        "price": "$100",
+        "seat": 8000
+    },
+    {
+        "id": 3,
+        "service_name": "Backstage Pass",
+        "image": "https://i.ibb.co/9N3qhC1/IMG-20231006-WA0001.jpg",
+        "description": "Go behind the scenes, meet artists, and witness the festival from an exclusive backstage perspective.",
+        "price": "$750",
+        "seat": 10000
+    },
+    {
+        "id": 4,
+        "service_name": "Camping Experience",
+        "image": "https://i.ibb.co/RzJBfBd/IMG-20231006-WA0003.jpg",
+        "description": "Camp on-site and immerse yourself in the festival atmosphere throughout the weekend.",
+        "price": "$200",
+        "seat": 5000
+    },
+    {
+        "id": 5,
+        "service_name": "Family-Friendly Package",
+        "image": "https://i.ibb.co/KWHMnwR/IMG-20231006-WA0002.jpg",
+        "description": "A special package for families, offering kid-friendly activities and designated family zones at the festival.",
+        "price": "$80",
+        "seat": 7000
+    },
+    {
+        "id": 6,
+        "service_name": "Luxury Festival Suite",
+        "image": "https://i.ibb.co/xqd7Zp1/IMG-20231006-WA0005.jpg",
+        "description": "Indulge in luxury with a private suite featuring top-notch amenities and personalized service during the festival.",
+        "price": "$150",
+        "seat": 12000
+    },
+    {
+        "id": 7,
+        "service_name": "Food and Beverage Pass",
+        "image": "https://i.ibb.co/Yt7nCHS/IMG-20231006-WA0004.jpg",
+        "description": "Enjoy a variety of culinary delights and beverages from festival vendors throughout the event.",
+        "price": "$250",
+        "seat": 15000
+    },
+    {
+        "id": 8,
+        "service_name": "Artist Meet and Greet",
+        "image": "https://i.ibb.co/QNkY75V/IMG-20231006-WA0006.jpg",
+        "description": "Meet your favorite artists, take photos, and get autographs in this exclusive meet and greet experience.",
+        "price": "$300",
+        "seat": 12000
+    }
+]
