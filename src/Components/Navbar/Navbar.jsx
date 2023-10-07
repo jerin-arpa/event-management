@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaUserCircle } from 'react-icons/fa';
+import { LuLogOut } from 'react-icons/lu';
 
 const Navbar = () => {
 
@@ -52,20 +54,69 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <div className="mr-2">
 
-                    {
-                        user ?
-                            <Link to='/login'>
-                                <button onClick={handleSignOut} className="bg-amber-600 border-0 text-white p-1 px-4 rounded-lg">Sign Out</button>
-                            </Link>
-                            :
-                            <Link to='/login'>
-                                <button className="bg-amber-600 border-0 text-white p-1 px-4 rounded-lg">Login</button>
-                            </Link>
-                    }
+                        {
+                            user ?
+                                <div className="flex gap-4">
+                                    <div className="dropdown dropdown-end">
+                                        <div className="flex gap-3">
+                                            <div className="flex items-center">
+                                                <h2 className="hidden md:flex">{user.displayName}</h2>
+                                            </div>
+                                            <label tabIndex={0}>
+                                                {
+                                                    user.photoURL ? (
+                                                        <img className="w-10 rounded-full" src={user.photoURL} alt="" />
+                                                    ) : (
+                                                        <FaUserCircle className="text-4xl">
+                                                        </FaUserCircle>
+                                                    )
+                                                }
+                                            </label>
+                                        </div>
+                                        <div className="dropdown-content z-[1] menu p-2 shadow bg-cyan-900 rounded-box lg:w-96">
+                                            <div className="p-3">
+                                                <div className="flex justify-center">
+                                                    {
+                                                        user.photoURL ? (
+                                                            <img className="rounded-full w-24" src={user.photoURL} alt="" />
+                                                        ) : (
+                                                            <FaUserCircle className="text-7xl">
+                                                            </FaUserCircle>
+                                                        )
+                                                    }
+                                                </div>
+                                                <div className="flex justify-center">
+                                                    <hr className="my-7 w-1/2" />
+                                                </div>
+                                                <div className="text-center">
+                                                    <h2 className="text-lg lg:text-2xl mb-2 text-white"><span className="text-amber-600">Name:</span> {user.displayName
+                                                    }</h2>
+                                                    <p className="lg:text-lg mb-5 text-white"><span className="text-amber-600">Email:</span> {user.email}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <Link to='/login' className="flex items-center">
+                                        <button onClick={handleSignOut} className="bg-amber-600 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
+                                    </Link>
+                                </div>
+                                :
+                                <>
+                                    <Link to='/login'>
+                                        <button className="bg-amber-600 border-0 text-white p-1 px-4 rounded-lg">Login</button>
+                                    </Link>
+                                </>
+                        }
+                    </div>
+
+
+
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

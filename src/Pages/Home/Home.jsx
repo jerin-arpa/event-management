@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             {/* Services section */}
-            <section className="container mx-auto mb-10">
+            <section className="container mx-auto mb-10 px-5">
                 <div className="text-center lg:w-1/2 mx-auto my-10">
                     <h1 className="mb-5 text-3xl font-bold">FestCon Management Service</h1>
                     <p className="mb-5">Expertly orchestrating events that resonate, creating unforgettable festival experiences. Discover exceptional artists and craft a vibrant festival lineup that hits all the right notes</p>

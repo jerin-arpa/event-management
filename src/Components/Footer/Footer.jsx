@@ -4,7 +4,7 @@ const Footer = () => {
             <footer className="footer p-10 container mx-auto px-5">
                 <aside>
 
-                    <p><span className="text-gray-500">FestCon</span> Management<br />Providing reliable tech since 2021</p>
+                    <p><span className="text-xl">FestCon Management</span><br />Providing reliable tech since 2021</p>
                 </aside>
                 <nav>
                     <header className="uppercase text-xl text-gray-500 font-bold">Services</header>
@@ -37,7 +37,7 @@ const Footer = () => {
 
 
             <div className="container mx-auto px-5">
-                <p className="text-center mt-8">Copyright © 2023 - All right reserved by Ismat Jerin</p>
+                <p className="text-center text-sm mt-8">Copyright © 2023 - All right reserved by Ismat Jerin</p>
             </div>
         </div>
     );
