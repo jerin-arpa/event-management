@@ -2,11 +2,12 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FcGoogle } from 'react-icons/fc';
 import Swal from 'sweetalert2';
 
 
 const SignUp = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, googleSignUp } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -58,6 +59,22 @@ const SignUp = () => {
                 console.error(error);
             })
     }
+
+
+
+    const handleGoogleSignUp = () => {
+        googleSignUp()
+            .then(result => {
+                console.log(result.user);
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+
+    }
+
+
 
     return (
         <div>
@@ -113,7 +130,13 @@ const SignUp = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button className="btn btn-accent">Login</button>
+                            <button className="btn btn-accent">Sign Up</button>
+                        </div>
+                        <div>
+                            <button onClick={handleGoogleSignUp} className="btn btn-outline mt-5 mb-4 w-full">
+                                <FcGoogle className='text-xl'></FcGoogle>
+                                Continue with Google
+                            </button>
                         </div>
                     </form>
 

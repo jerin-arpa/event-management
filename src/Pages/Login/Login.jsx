@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FcGoogle } from 'react-icons/fc';
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignUp } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     console.log('Location in the login page', location);
@@ -26,6 +27,19 @@ const Login = () => {
                 console.error(error);
                 setLoginError('Invalid email or password. Please try again.');
             })
+    }
+
+
+    const handleGoogleSignUp = () => {
+        googleSignUp()
+            .then(result => {
+                console.log(result.user);
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+
     }
 
 
@@ -59,6 +73,13 @@ const Login = () => {
 
                         <div className="form-control mt-6">
                             <button className="btn btn-accent">Login</button>
+                        </div>
+
+                        <div>
+                            <button onClick={handleGoogleSignUp} className="btn btn-outline mt-5 mb-4 w-full">
+                                <FcGoogle className='text-xl'></FcGoogle>
+                                Continue with Google
+                            </button>
                         </div>
                     </form>
 
