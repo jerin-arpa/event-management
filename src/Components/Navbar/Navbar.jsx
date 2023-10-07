@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar container mx-auto px-5">
+            <div className="navbar container mx-auto px-5 py-7">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -100,13 +100,13 @@ const Navbar = () => {
                                     </div>
 
                                     <Link to='/login' className="flex items-center">
-                                        <button onClick={handleSignOut} className="bg-amber-600 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
+                                        <button onClick={handleSignOut} className="bg-amber-800 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
                                     </Link>
                                 </div>
                                 :
                                 <>
                                     <Link to='/login'>
-                                        <button className="bg-amber-600 border-0 text-white p-1 px-4 rounded-lg">Login</button>
+                                        <button className="bg-amber-800 border-0 text-white p-3 px-4 rounded-lg">Login</button>
                                     </Link>
                                 </>
                         }

@@ -7,7 +7,14 @@
         "price": "$500",
         "seat": 6000,
         "details_description": "Experience festival grandeur at its finest with our VIP Festival Experience. Immerse yourself in a world of exclusivity, where every moment is a memory to treasure. Enjoy unparalleled access to the best stages, private lounges, and dedicated concierge service. Delight in gourmet dining, refreshing beverages, and a prime view of your favorite artists performing live. The VIP Festival Experience is designed for those who seek the epitome of festival luxury, ensuring you have an unforgettable time in the heart of the action.",
-        "rating": 4.8
+        "rating": 4.8,
+        "eventName": "Summer Beats Festival",
+        "place": "San Francisco, CA, USA",
+        "time": "3:00 PM - 11:00 PM",
+        "date": "2023-07-15",
+        "singerImage1": "https://i.ibb.co/0h10tdV/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg",
+        "singerImage2": "https://i.ibb.co/Tv1sPKQ/360-F-408990068-A8-Qz-YIfg-Chv66j71u5eavc-IKA6-NC2-ML3.jpg",
+        "event_description": "Join us for a day of musical extravaganza in the heart of San Francisco."
     },
     {
         "id": 2,
@@ -17,7 +24,14 @@
         "price": "$100",
         "seat": 8000,
         "details_description": "Join the festival euphoria with our General Admission Ticket. Dive into the vibrant atmosphere, dance to electrifying beats, and connect with fellow music enthusiasts. Our open-seating zones allow you to explore and find the perfect spot to enjoy the performances. Immerse yourself in the collective energy of the crowd, creating memories that will last a lifetime. The General Admission Ticket offers an authentic festival experience, celebrating music, unity, and the joy of being part of something truly extraordinary.",
-        "rating": 4.5
+        "rating": 4.5,
+        "eventName": "Rocktober Night",
+        "place": "Wembley Stadium, UK",
+        "time": "6:30 PM - 2:00 AM",
+        "date": "2023-10-20",
+        "singerImage1": "https://i.ibb.co/Wvrpr26/The-Weeknd-singing-tcm25-741773.webp",
+        "singerImage2": "https://i.ibb.co/hYdrTx4/man-singing-stage.jpg",
+        "event_description": "Get ready for a night of high-energy rock and roll with top bands."
     },
     {
         "id": 3,
@@ -27,7 +41,14 @@
         "price": "$750",
         "seat": 10000,
         "details_description": "Step into the inner sanctum of the festival with our Backstage Pass. Gain access to the pulsating heart of the event, where artists prepare to enchant the audience. Interact with musicians, explore production areas, and savor the electric energy that fills the air. This pass grants you an exclusive view of the festival's workings, making your experience truly extraordinary. Get ready for an immersive journey, witnessing the magic of a festival from a unique and privileged vantage point.",
-        "rating": 4.9
+        "rating": 4.9,
+        "eventName": "Jazz in the Park",
+        "place": "Central Park, NY, USA",
+        "time": "4:00 PM - 10:00 PM",
+        "date": "2023-09-05",
+        "singerImage1": "https://i.ibb.co/qWwQrDN/American-singer-songwriter-Billie-Eilish-2020.jpg",
+        "singerImage2": "https://i.ibb.co/cC2wZZd/0243-Zayn-Malik.webp",
+        "event_description": "Experience the smooth sounds of jazz in the iconic Central Park."
     },
     {
         "id": 4,
@@ -37,7 +58,14 @@
         "price": "$200",
         "seat": 5000,
         "details_description": "Indulge in the full festival experience with our Camping Experience. Immerse yourself in nature and music, creating unforgettable memories with friends and fellow festival-goers. Set up your tent, gather around the campfire, and embrace the festival vibes day and night. With easy access to the festival grounds, you'll be in the midst of the action whenever you desire. It's a perfect way to enhance your festival adventure and be a part of the vibrant festival community.",
-        "rating": 4.7
+        "rating": 4.7,
+        "eventName": "ElectroCity Music Festival",
+        "place": "Berlin Arena, Germany",
+        "time": "7:00 PM - 3:00 AM",
+        "date": "2023-08-28",
+        "singerImage1": "https://i.ibb.co/0K9JKbd/1828.jpg",
+        "singerImage2": "https://i.ibb.co/F83F4Sh/americas-got-talent-1802-mitch-rossell.jpg",
+        "event_description": "Dive into the electrifying beats of techno and dance music."
     },
     {
         "id": 5,
@@ -47,7 +75,14 @@
         "price": "$80",
         "seat": 7000,
         "details_description": "Make the festival a family affair with our Family-Friendly Package. Designed with families in mind, this package offers a safe and enjoyable festival experience for all ages. Enjoy family-focused activities, child-friendly zones, and entertainment suitable for kids. Create lasting memories as you share the joy of live music and a vibrant atmosphere with your loved ones. It's an opportunity to unite generations in the spirit of music and togetherness at the festival.",
-        "rating": 4.6
+        "rating": 4.6,
+        "eventName": "Soulful Serenade",
+        "place": "Opera House, Australia",
+        "time": "8:00 PM - 11:30 PM",
+        "date": "2023-11-12",
+        "singerImage1": "https://i.ibb.co/0h10tdV/caucasian-female-singer-portrait-isolated-on-purple-studio-background-in-neon-light.jpg",
+        "singerImage2": "https://i.ibb.co/Tv1sPKQ/360-F-408990068-A8-Qz-YIfg-Chv66j71u5eavc-IKA6-NC2-ML3.jpg",
+        "event_description": "An evening of soulful tunes by renowned artists."
     },
     {
         "id": 6,
@@ -57,7 +92,14 @@
         "price": "$1500",
         "seat": 12000,
         "details_description": "Experience festival opulence at its peak with our Luxury Festival Suite. This exclusive offering allows you to revel in luxury amidst the festival's excitement. Enjoy a private suite equipped with lavish amenities, personalized service, and unparalleled comfort. You'll have the best seats in the house, ensuring a premium view of the performances. Immerse yourself in luxury, and let the festival unfold in grandeur around you.",
-        "rating": 4.9
+        "rating": 4.9,
+        "eventName": "Spring Jam Fiesta",
+        "place": "Miami Beach, FL, USA",
+        "time": "5:00 PM - 11:00 PM",
+        "date": "2023-04-28",
+        "singerImage1": "https://i.ibb.co/Wvrpr26/The-Weeknd-singing-tcm25-741773.webp",
+        "singerImage2": "https://i.ibb.co/hYdrTx4/man-singing-stage.jpg",
+        "event_description": "Celebrate the spring season with a beachside jam featuring top artists."
     },
     {
         "id": 7,
@@ -67,7 +109,14 @@
         "price": "$250",
         "seat": 15000,
         "details_description": "Savor the flavors of the festival with our Food and Beverage Pass. Indulge your taste buds in a gastronomic journey, exploring a diverse range of delectable dishes and beverages from festival vendors. From gourmet treats to refreshing drinks, this pass ensures you're well-nourished and hydrated as you enjoy the musical performances. Revel in the culinary delights and gastronomic offerings while immersing yourself in the festival ambiance.",
-        "rating": 4.2
+        "rating": 4.2,
+        "eventName": "Classical Harmony Evening",
+        "place": "Carnegie Hall, NY, USA",
+        "time": "7:30 PM - 10:00 PM",
+        "date": "2023-06-10",
+        "singerImage1": "https://i.ibb.co/qWwQrDN/American-singer-songwriter-Billie-Eilish-2020.jpg",
+        "singerImage2": "https://i.ibb.co/cC2wZZd/0243-Zayn-Malik.webp",
+        "event_description": "An enchanting evening of classical music in the world-famous Carnegie Hall."
     },
     {
         "id": 8,
@@ -77,6 +126,13 @@
         "price": "$300",
         "seat": 12000,
         "details_description": "Elevate your festival experience with our Artist Meet and Greet. Step into an exclusive space to meet, interact, and connect with your favorite artists. Get autographs, take photos, and share memorable moments with the performers. It's a unique opportunity to bridge the gap between artist and audience, creating lasting memories that extend beyond the festival. Immerse yourself in the magic of live music and the chance to meet the talented individuals who bring it to life.",
-        "rating": 4.0
+        "rating": 4.0,
+        "eventName": "Reggae Rhythms Festival",
+        "place": "Marley Stadium, Jamaica",
+        "time": "6:00 PM - 1:00 AM",
+        "date": "2023-09-02",
+        "singerImage1": "https://i.ibb.co/0K9JKbd/1828.jpg",
+        "singerImage2": "https://i.ibb.co/F83F4Sh/americas-got-talent-1802-mitch-rossell.jpg",
+        "event_description": "Experience the authentic reggae beats in the heart of reggae music, Kingston."
     }
 ]

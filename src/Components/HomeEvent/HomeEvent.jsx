@@ -29,7 +29,7 @@ const HomeEvent = ({ event }) => {
 
                     <div className='flex justify-center items-center my-3'>
                         <Link to={`/eventDetails/${id}`}>
-                            <button className='btn btn-warning text-white hover:bg-cyan-950 hover:text-white'>Show Details</button>
+                            <button className='btn bg-amber-800 border-0 text-white hover:bg-cyan-950 hover:text-white'>Show Details</button>
                         </Link>
                     </div>
                 </div>

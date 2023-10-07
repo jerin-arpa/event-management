@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
@@ -9,6 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
     console.log('Location in the login page', location);
     const [loginError, setLoginError] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
 
     const handleLogin = e => {
@@ -55,11 +57,20 @@ const Login = () => {
                             </label>
                             <input type="email" name="email" placeholder="Enter your email" className="input input-bordered" required />
                         </div>
+
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="Enter your password" className="input input-bordered" required />
+                            <input type={showPassword ? "text" : "password"}
+                                name="password" placeholder="Enter your Password" className="input input-bordered w-full" required />
+                            <div className="relative flex justify-end">
+                                <span onClick={() => setShowPassword(!showPassword)} className="absolute bottom-4 right-4">
+                                    {
+                                        showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                                    }
+                                </span>
+                            </div>
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
@@ -72,7 +83,7 @@ const Login = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button className="btn btn-accent">Login</button>
+                            <button className="btn bg-amber-800 border-amber-800">Login</button>
                         </div>
 
                         <div>

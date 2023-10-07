@@ -9,8 +9,8 @@ const EventDetails = () => {
     const event = events.find(event => event.id === idInt);
 
     return (
-        <div className="container mx-auto my-10">
-            <div className="flex gap-10">
+        <div className=" bg-slate-900 py-10">
+            <div className="flex gap-10 container mx-auto my-10">
                 <img className="rounded-xl" src={event.image} alt="" />
 
                 <div className="flex items-center">
@@ -57,9 +57,9 @@ const EventDetails = () => {
                         </div>
 
                         <div className="flex gap-10 mt-6">
-                            <button className='btn btn-warning btn-outline'>Book Now</button>
+                            <button className='btn btn-outline'>Book Now</button>
                             <Link to='/'>
-                                <button className='btn btn-warning btn-outline'>GO Home</button>
+                                <button className='btn btn-outline'>GO Home</button>
                             </Link>
                         </div>
                     </div>
