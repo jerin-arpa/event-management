@@ -10,7 +10,7 @@ const HomeEvent = ({ event }) => {
             <img className='rounded-t-xl w-full h-60' src={image} alt="" />
             <div className='p-5'>
                 <h2 className='text-2xl font-bold mb-2 text-amber-600'>{service_name}</h2>
-                <p className='h-20'>{description}</p>
+                <p >{description}</p>
                 <div className='flex justify-between mt-6'>
                     <div>
                         <div className='flex gap-3'>
