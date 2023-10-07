@@ -1,12 +1,40 @@
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+    const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('Location in the login page', location);
+    const [loginError, setLoginError] = useState('');
+
+
+    const handleLogin = e => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user);
+
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
+                setLoginError('Invalid email or password. Please try again.');
+            })
+    }
+
+
     return (
         <div>
             <div className="flex justify-center my-14 ">
                 <div className="bg-cyan-950 rounded-lg w-full md:w-3/4 lg:w-1/3 p-8">
                     <h2 className="text-3xl font-bold text-center pt-7 pb-5">Login your account</h2>
-                    <form className="card-body">
+                    <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
@@ -22,6 +50,13 @@ const Login = () => {
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
+
+                        <div>
+                            {
+                                loginError && <p className="text-red-500 text-xl text-center">{loginError}</p>
+                            }
+                        </div>
+
                         <div className="form-control mt-6">
                             <button className="btn btn-accent">Login</button>
                         </div>
