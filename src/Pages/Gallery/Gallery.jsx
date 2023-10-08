@@ -16,12 +16,19 @@ const Gallery = () => {
     return (
         <div className="bg-slate-950">
             <div>
-                <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/qrRP7WT/1.png)', backgroundSize: 'cover' }}>
+                <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/MkJ7Scn/2.png)', backgroundSize: 'cover' }}>
                     <div className="hero-overlay bg-opacity-60"></div>
-                    <div className="hero-content text-center text-neutral-content py-28 md:py-36">
+                    <div className="hero-content text-center text-neutral-content py-28">
                         <div className="max-w-md lg:max-w-2xl">
-                            <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Meet <span className="text-yellow-500">Our Speakers</span></h1>
-                            <p className="mb-5 text-white">From concept to applause, FestCon Management conducts remarkable festivals. Our team brings precision, passion, and expertise to every beat, ensuring your festival is a resounding success.</p>
+                            <div className="text-center lg:w-1/2 mx-auto mb-3">
+                                <div className="flex gap-3 justify-center">
+                                    <div>
+                                        <GiChemicalBolt className="text-2xl text-amber-500"></GiChemicalBolt>
+                                    </div>
+                                    <p className="mb-3">Recent Photo Gallery</p>
+                                </div>
+                            </div>
+                            <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Check Our <span className="text-yellow-500">Latest Photos</span></h1>
                         </div>
                     </div>
                 </div>

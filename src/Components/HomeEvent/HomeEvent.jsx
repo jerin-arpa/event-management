@@ -7,9 +7,11 @@ const HomeEvent = ({ event }) => {
     const { id, image, service_name, description, price, seat } = event;
     return (
         <div className='rounded-xl shadow-xl bg-cyan-950'>
-            <img className='rounded-t-xl w-full h-60' src={image} alt="" />
+            <img className='rounded-t-xl w-full h-56' src={image} alt="" />
             <div className='p-5'>
-                <h2 className='text-2xl font-bold mb-2 text-amber-600'>{service_name}</h2>
+                <div className='h-16'>
+                    <h2 className='text-xl font-bold mb-2 text-amber-600'>{service_name}</h2>
+                </div>
                 <p >{description}</p>
                 <div className='flex justify-between mt-6'>
                     <div>
@@ -23,7 +25,7 @@ const HomeEvent = ({ event }) => {
                             <div className='flex items-center text-xl'>
                                 <MdEventSeat className='text-amber-600'></MdEventSeat>
                             </div>
-                            <p className='text-lg'>{seat} seats</p>
+                            <p className='text-lg'>{seat}</p>
                         </div>
                     </div>
 
