@@ -101,6 +101,29 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+
+
+            {/* Book Seat */}
+            <section className="bg-slate-900 py-20">
+                <div className="container mx-auto px-5">
+                    <div className="hero py-48 rounded-3xl" style={{ backgroundImage: 'url(https://i.ibb.co/kSmVCC0/10.png)' }}>
+                        <div className="hero-overlay bg-opacity-70"></div>
+                        <div className="hero-content text-center">
+                            <div className="w-2/3 lg:w-full text-white">
+                                <div className="flex gap-3 justify-center">
+                                    <div>
+                                        <GiChemicalBolt className="text-2xl text-amber-500"></GiChemicalBolt>
+                                    </div>
+                                    <p className="mb-3 text-xl">About the Event</p>
+                                </div>
+                                <h1 className="mb-5 text-3xl lg:text-5xl">Have Not Booked Your Seat Yet <br /> Get Ticket Now</h1>
+                                <button className="btn bg-cyan-600 border-0 text-white p-1 px-8 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600 mt-6">Purchase Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

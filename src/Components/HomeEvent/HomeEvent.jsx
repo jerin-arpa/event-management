@@ -17,19 +17,19 @@ const HomeEvent = ({ event }) => {
                             <div className='flex items-center text-xl'>
                                 <FaMoneyCheck className='text-amber-600'></FaMoneyCheck>
                             </div>
-                            <p className='text-xl font-bold'>{price}</p>
+                            <p className='text-lg'>{price}</p>
                         </div>
                         <div className='flex gap-3'>
                             <div className='flex items-center text-xl'>
                                 <MdEventSeat className='text-amber-600'></MdEventSeat>
                             </div>
-                            <p className='text-xl font-bold'>{seat} seats</p>
+                            <p className='text-lg'>{seat} seats</p>
                         </div>
                     </div>
 
                     <div className='flex justify-center items-center my-3'>
                         <Link to={`/eventDetails/${id}`}>
-                            <button className='btn bg-amber-800 border-0 text-white hover:bg-cyan-950 hover:text-white'>Show Details</button>
+                            <button className='btn bg-amber-800 border-0 text-white hover:bg-cyan-800 hover:text-white'>Show Details</button>
                         </Link>
                     </div>
                 </div>
