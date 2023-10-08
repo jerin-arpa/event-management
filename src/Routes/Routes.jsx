@@ -29,6 +29,7 @@ const router = createBrowserRouter([
             {
                 path: "/speakers",
                 element: <PrivateRoute><Speakers></Speakers></PrivateRoute>,
+                loader: () => fetch('/speakers.json'),
             },
             {
                 path: "/gallery",

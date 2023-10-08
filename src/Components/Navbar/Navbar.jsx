@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaUserCircle } from 'react-icons/fa';
 import { LuLogOut } from 'react-icons/lu';
+import { GiGuitarBassHead } from 'react-icons/gi';
 
 const Navbar = () => {
 
@@ -56,7 +57,10 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <p className="text-2xl font-extrabold"><span className="text-amber-600">FestCon</span> Management</p>
+                    <div className="flex gap-1">
+                        <GiGuitarBassHead className="text-3xl text-amber-600"></GiGuitarBassHead>
+                        <p className="text-2xl font-extrabold"><span className="text-amber-600">FestCon</span> Management</p>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-7 px-1">
@@ -85,7 +89,7 @@ const Navbar = () => {
                                                 }
                                             </label>
                                         </div>
-                                        <div className="dropdown-content z-[1] menu p-2 shadow bg-cyan-900 rounded-box lg:w-96">
+                                        <div className="dropdown-content z-[1] menu p-2 shadow bg-slate-800 rounded-box lg:w-96">
                                             <div className="p-3">
                                                 <div className="flex justify-center">
                                                     {
