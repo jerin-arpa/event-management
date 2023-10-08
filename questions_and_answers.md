@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `{}`
 
-<i>Write your explanation here</i>
+<i>As the vairable named "greeting" doesn't match with the initialized variable "greetign", the variable "greetign" will get assigned as the global scope. Thus, we can see the an empty object in the console. Also, the variable called "greeting" will be declared but won't be use anywhere. </i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: `"12"`
 
-<i>Write your explanation here</i>
+<i>For passing a string value "2" with an integer 1 in the sum function, the JavaScript will perform implicit type coercion and convert the number 1 to a string in order to perform the concatenation operation with the string "2".</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>As the const variable food was declared with ['🍕', '🍫', '🥑', '🍔'] and it didn't get changed at any part of the code, also the info variable doesn't tried to change/modified the food variable. So, it will log the food variable with it's inital variable.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>In sayHi(name) function, it required a name parameter, but we didn't passed any argument. That's why the parameter will get undefined and it will console log as "Hi there, undefined".</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>In this code, for each non-zero value of nums it will increase the value of count by 1. In nums array there's only one 0 is existed other than that all the values are non-zero. So the count will get increased 3 time and it will log 3.</i>
 
 </p>
 </details>
