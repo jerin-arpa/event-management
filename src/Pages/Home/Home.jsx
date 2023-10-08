@@ -4,11 +4,12 @@ import HomeEvent from "../../Components/HomeEvent/HomeEvent";
 import { BsStopwatch } from 'react-icons/bs';
 import { GoLocation } from 'react-icons/go';
 import { GiChemicalBolt } from 'react-icons/gi';
+import { IoMdCheckmark } from 'react-icons/io';
+import { RxCrossCircled } from 'react-icons/rx';
 import moment from 'moment';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
 
 
 const Home = () => {
@@ -102,6 +103,222 @@ const Home = () => {
                 </div>
             </section>
 
+
+            {/* Purchase Ticket */}
+            <section className="bg-slate-950 py-20">
+                <div className="container mx-auto px-5">
+                    <div className="text-center">
+                        <div className="flex justify-center gap-3">
+                            <div className="flex">
+                                <GiChemicalBolt className="text-2xl text-amber-500"></GiChemicalBolt>
+                            </div>
+                            <p className="mb-3 text-xl">Our Events Pricing</p>
+                        </div>
+                        <h1 className="mb-5 text-3xl lg:text-5xl">Purchase Your Ticket</h1>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-20 mb-10">
+                        {/* Option-1 */}
+                        <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500" className="bg-slate-900 py-10 px-5 rounded-lg">
+                            <div className="border-b border-dashed">
+                                <h2 className="text-center text-xl font-bold mb-5">Basic</h2>
+                                <p className="text-center mb-5">$ <span className="text-amber-600"><span className="text-4xl">20</span> /per month</span></p>
+                            </div>
+                            <div className="flex justify-center mt-6 mb-4">
+                                <div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Access to all keynote</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Workshop</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Eligible for VIP</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Launch Food</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Entertainment</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Full Conference</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Live videos</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Meet Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex justify-center">
+                                <button className="bg-amber-800 border-0 text-white px-10 py-1 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600">Buy Ticket</button>
+                            </div>
+                        </div>
+
+                        {/* Option-2 */}
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000" className="bg-slate-900 py-10 px-5 rounded-lg">
+                            <div className="border-b border-dashed">
+                                <h2 className="text-center text-xl font-bold mb-5">Standard Plan</h2>
+                                <p className="text-center mb-5">$ <span className="text-amber-600"><span className="text-4xl">45</span> /per month</span></p>
+                            </div>
+                            <div className="flex justify-center mt-6 mb-4">
+                                <div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Access to all keynote</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Workshop</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Eligible for VIP</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Launch Food</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Entertainment</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Full Conference</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Live videos</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Meet Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex justify-center">
+                                <button className="bg-amber-800 border-0 text-white px-10 py-1 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600">Buy Ticket</button>
+                            </div>
+                        </div>
+
+                        {/* Option-3 */}
+                        <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500" className="bg-slate-900 py-10 px-5 rounded-lg">
+                            <div className="border-b border-dashed">
+                                <h2 className="text-center text-xl font-bold mb-5">premium</h2>
+                                <p className="text-center mb-5">$ <span className="text-amber-600"><span className="text-4xl">65</span> /per month</span></p>
+                            </div>
+                            <div className="flex justify-center mt-6 mb-4">
+                                <div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Access to all keynote</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Workshop</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Eligible for VIP</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Launch Food</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Entertainment</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Full Conference</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Live videos</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <RxCrossCircled className="bg-red-600 rounded-full"></RxCrossCircled>
+                                        <p>Meet Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex justify-center">
+                                <button className="bg-amber-800 border-0 text-white px-10 py-1 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600">Buy Ticket</button>
+                            </div>
+                        </div>
+
+
+                        {/* Option-4 */}
+                        <div data-aos="fade-up"
+                            data-aos-duration="3000" className="bg-slate-900 py-10 px-5 rounded-lg">
+                            <div className="border-b border-dashed">
+                                <h2 className="text-center text-xl font-bold mb-5">Pro Plan</h2>
+                                <p className="text-center mb-5">$ <span className="text-amber-600"><span className="text-4xl">85</span> /per month</span></p>
+                            </div>
+                            <div className="flex justify-center mt-6 mb-4">
+                                <div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Access to all keynote</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Workshop</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Eligible for VIP</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Launch Food</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Entertainment</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Full Conference</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Live videos</p>
+                                    </div>
+                                    <div className="flex items-center gap-2 mb-1">
+                                        <IoMdCheckmark className="bg-green-600 rounded-full"></IoMdCheckmark>
+                                        <p>Meet Speaker</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex justify-center">
+                                <button className="bg-amber-800 border-0 text-white px-10 py-1 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600">Buy Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* Book Seat */}
