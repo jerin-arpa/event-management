@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 const SignUp = () => {
     const { createUser, googleSignUp } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
+    const [termsError, setTermsError] = useState('');
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
@@ -39,8 +40,9 @@ const SignUp = () => {
             setSignUpError('Your password must contain a special character');
             return;
         }
-        else if (!accepted) {
-            setSignUpError('Please accept our terms and conditions');
+
+        if (!accepted) {
+            setTermsError('Please accept our terms and conditions');
             return;
         }
 
@@ -77,10 +79,10 @@ const SignUp = () => {
 
 
     return (
-        <div>
-            <div className="flex justify-center my-14 ">
-                <div className="bg-cyan-950 rounded-lg w-full md:w-3/4 lg:w-1/3 p-8">
-                    <h2 className="text-3xl font-bold text-center pt-7 pb-5">SignUp your account</h2>
+        <div className='bg-slate-900 py-10'>
+            <div className="flex justify-center my-12 container mx-auto px-5">
+                <div className="bg-slate-950 rounded-xl w-full md:w-3/4 lg:w-2/4 p-8">
+                    <h2 className="text-3xl font-bold text-center pt-7 pb-5"><span className='text-amber-600'>SignUp</span> your account</h2>
                     <form onSubmit={handleSignUp} className="card-body">
                         <div className="form-control">
                             <label className="label">
@@ -119,8 +121,15 @@ const SignUp = () => {
                         </div>
 
                         <div className="flex gap-3 mt-5">
-                            <input type="checkbox" name="terms" id="" />
+                            <div className='flex items-center'>
+                                <input className='checkbox checkbox-warning checkbox-sm' type="checkbox" name="terms" id="" />
+                            </div>
                             <label htmlFor="terms">Accept our terms and conditions</label>
+                        </div>
+                        <div>
+                            {
+                                termsError && <p className="text-red-400 text-sm mt-2">{termsError}</p>
+                            }
                         </div>
 
                         <div>
@@ -130,7 +139,7 @@ const SignUp = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button className="btn bg-amber-800 border-amber-800">Sign Up</button>
+                            <button className="btn bg-amber-600 border-amber-600 hover:bg-white hover:text-amber-600 text-white font-bold">Sign Up</button>
                         </div>
                         <div>
                             <button onClick={handleGoogleSignUp} className="btn btn-outline mt-5 mb-4 w-full">

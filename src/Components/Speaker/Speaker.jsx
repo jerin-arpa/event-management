@@ -12,9 +12,9 @@ const Speaker = ({ speaker }) => {
                 <BsLinkedin className='bg-amber-600 text-white rounded-full text-4xl mb-4'></BsLinkedin>
                 <AiFillTwitterCircle className='bg-amber-600 text-white rounded-full text-4xl mb-4'></AiFillTwitterCircle>
             </div>
-            <img className='w-full h-[400px] md:h-[500px] rounded-2xl' src={image} alt="" />
+            <img className='w-full h-[420px] md:h-[420px] rounded-2xl' src={image} alt="" />
             <div className='flex justify-center'>
-                <div className='absolute bottom-5 bg-white bg-opacity-20 text-white rounded-2xl w-11/12 p-2 py-5'>
+                <div className='absolute bottom-5 bg-white bg-opacity-30 text-white font-bold rounded-2xl w-11/12 p-2 py-5'>
                     <h2 className='text-2xl text-center mb-2'>{name}</h2>
                     <p className='text-lg text-center'>{position}</p>
                 </div>

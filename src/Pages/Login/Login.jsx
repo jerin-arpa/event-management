@@ -46,10 +46,10 @@ const Login = () => {
 
 
     return (
-        <div>
-            <div className="flex justify-center my-14 ">
-                <div className="bg-cyan-950 rounded-lg w-full md:w-3/4 lg:w-1/3 p-8">
-                    <h2 className="text-3xl font-bold text-center pt-7 pb-5">Login your account</h2>
+        <div className="bg-slate-900 py-10">
+            <div className="flex justify-center my-12 container mx-auto px-5">
+                <div className="bg-slate-950 rounded-xl w-full md:w-3/4 lg:w-2/4 p-8">
+                    <h2 className="text-3xl font-bold text-center pt-7 pb-5"><span className="text-amber-600">Login</span> your account</h2>
                     <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                             <label className="label">
@@ -83,7 +83,7 @@ const Login = () => {
                         </div>
 
                         <div className="form-control mt-6">
-                            <button className="btn bg-amber-800 border-amber-800">Login</button>
+                            <button className="btn bg-amber-600 border-amber-600 hover:bg-white hover:text-amber-600 text-white font-bold">Login</button>
                         </div>
 
                         <div>

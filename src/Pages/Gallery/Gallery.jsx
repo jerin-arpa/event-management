@@ -23,12 +23,12 @@ const Gallery = () => {
                             <div className="text-center lg:w-1/2 mx-auto mb-3">
                                 <div className="flex gap-3 justify-center">
                                     <div>
-                                        <GiChemicalBolt className="text-2xl text-amber-500"></GiChemicalBolt>
+                                        <GiChemicalBolt className="text-2xl text-amber-600"></GiChemicalBolt>
                                     </div>
                                     <p className="mb-3">Recent Photo Gallery</p>
                                 </div>
                             </div>
-                            <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Check Our <span className="text-yellow-500">Latest Photos</span></h1>
+                            <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-white">Check Our <span className="text-amber-600">Latest Photos</span></h1>
                         </div>
                     </div>
                 </div>
@@ -94,9 +94,9 @@ const Gallery = () => {
                 </div>
 
 
-                <section className="bg-slate-900 py-20">
+                <section className="bg-slate-900 py-20 text-white">
                     <div className="container mx-auto px-5">
-                        <div className="hero py-48 rounded-3xl" style={{ backgroundImage: 'url(https://i.ibb.co/kSmVCC0/10.png)' }}>
+                        <div className="hero py-44 rounded-3xl" style={{ backgroundImage: 'url(https://i.ibb.co/JxcQ1sf/enjoying-great-concert.jpg)' }}>
                             <div className="hero-overlay bg-opacity-70"></div>
                             <div className="hero-content text-center">
                                 <div className="w-2/3 lg:w-full text-white">
@@ -106,8 +106,8 @@ const Gallery = () => {
                                         </div>
                                         <p className="mb-3 text-xl">About the Event</p>
                                     </div>
-                                    <h1 className="mb-5 text-3xl lg:text-5xl">Have Not Booked Your Seat Yet <br /> Get Ticket Now</h1>
-                                    <button className="btn bg-cyan-600 border-0 text-white p-1 px-8 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600 mt-6">Purchase Ticket</button>
+                                    <h1 className="mb-5 text-3xl lg:text-4xl">Have Not Booked Your Seat Yet <br /> Get Ticket Now</h1>
+                                    <button className="btn bg-amber-600 border-0 text-white p-1 px-8 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600 mt-6">Purchase Ticket</button>
                                 </div>
                             </div>
                         </div>

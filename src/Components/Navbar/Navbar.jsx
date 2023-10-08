@@ -114,13 +114,13 @@ const Navbar = () => {
                                     </div>
 
                                     <Link to='/login' className="flex items-center">
-                                        <button onClick={handleSignOut} className="bg-amber-800 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
+                                        <button onClick={handleSignOut} className="bg-amber-600 border-0 text-white p-2 rounded-lg"><LuLogOut></LuLogOut></button>
                                     </Link>
                                 </div>
                                 :
                                 <>
                                     <Link to='/login'>
-                                        <button className="bg-amber-800 border-0 text-white p-3 px-4 rounded-lg">Login</button>
+                                        <button className="bg-amber-600 border-0 text-white p-3 px-4 rounded-lg">Login</button>
                                     </Link>
                                 </>
                         }

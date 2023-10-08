@@ -9,7 +9,7 @@ const EventDetails = () => {
     const event = events.find(event => event.id === idInt);
 
     return (
-        <div className=" bg-slate-900 py-10">
+        <div className=" bg-slate-900 py-10 text-white">
             <div className="flex gap-10 container mx-auto my-10">
                 <img className="rounded-xl" src={event.image} alt="" />
 
