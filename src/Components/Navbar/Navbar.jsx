@@ -5,6 +5,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import { LuLogOut } from 'react-icons/lu';
 import { GiGuitarBassHead } from 'react-icons/gi';
 
+
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext);

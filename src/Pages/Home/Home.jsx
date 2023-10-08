@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 
+
 const Home = () => {
     useEffect(() => {
         Aos.init();

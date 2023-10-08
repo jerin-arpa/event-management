@@ -3,6 +3,7 @@ import image4 from '../../assets/images/dj.png';
 import image5 from '../../assets/images/image-6.png';
 import { GiChemicalBolt } from 'react-icons/gi';
 
+
 const About = () => {
     return (
         <div className="bg-slate-950">

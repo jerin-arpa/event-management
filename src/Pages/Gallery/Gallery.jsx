@@ -12,6 +12,7 @@ import image10 from '../../assets/images/10.png';
 import image11 from '../../assets/images/11.png';
 import image12 from '../../assets/images/12.png';
 
+
 const Gallery = () => {
     return (
         <div className="bg-slate-950">

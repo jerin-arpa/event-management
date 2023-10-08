@@ -3,6 +3,7 @@ import { BsFacebook, BsLinkedin } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 
 
+
 const Speaker = ({ speaker }) => {
     const { name, image, position } = speaker;
     return (

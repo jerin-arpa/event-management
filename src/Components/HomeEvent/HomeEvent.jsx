@@ -3,6 +3,7 @@ import { MdEventSeat } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
 const HomeEvent = ({ event }) => {
     const { id, image, service_name, description, price, seat } = event;
     return (

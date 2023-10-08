@@ -13,6 +13,7 @@ const EventDetails = () => {
             <div className="flex gap-10 container mx-auto my-10">
                 <img className="rounded-xl" src={event.image} alt="" />
 
+
                 <div className="flex items-center">
                     <div>
                         <h2 className="text-3xl font-bold mb-5 text-amber-600">{event.service_name}</h2>
