@@ -60,7 +60,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-1">
                         <GiGuitarBassHead className="text-3xl text-amber-600"></GiGuitarBassHead>
-                        <p className="text-2xl font-extrabold"><span className="text-amber-600">FestCon</span> Management</p>
+                        <p className="text-sm md:text-2xl font-extrabold"><span className="text-amber-600">FestCon</span> Management</p>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -73,7 +73,7 @@ const Navbar = () => {
 
                         {
                             user ?
-                                <div className="flex gap-4">
+                                <div className="flex gap-2 md:gap-4">
                                     <div className="dropdown dropdown-end">
                                         <div className="flex gap-3">
                                             <div className="flex items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
                                             <label tabIndex={0}>
                                                 {
                                                     user.photoURL ? (
-                                                        <img className="w-10 rounded-full" src={user.photoURL} alt="" />
+                                                        <img className="w-8 md:w-10 rounded-full" src={user.photoURL} alt="" />
                                                     ) : (
                                                         <FaUserCircle className="text-4xl">
                                                         </FaUserCircle>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                                 <div className="flex justify-center">
                                                     {
                                                         user.photoURL ? (
-                                                            <img className="rounded-full w-24" src={user.photoURL} alt="" />
+                                                            <img className="rounded-full w-16 md:w-24" src={user.photoURL} alt="" />
                                                         ) : (
                                                             <FaUserCircle className="text-7xl">
                                                             </FaUserCircle>
@@ -106,9 +106,9 @@ const Navbar = () => {
                                                     <hr className="my-7 w-1/2" />
                                                 </div>
                                                 <div className="text-center">
-                                                    <h2 className="text-lg lg:text-2xl mb-2 text-white"><span className="text-amber-600">Name:</span> {user.displayName
+                                                    <h2 className="text-sm md:text-2xl mb-2 text-white"><span className="text-amber-600">Name:</span> {user.displayName
                                                     }</h2>
-                                                    <p className="lg:text-lg mb-5 text-white"><span className="text-amber-600">Email:</span> {user.email}</p>
+                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-amber-600">Email:</span> {user.email}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
                                 :
                                 <>
                                     <Link to='/login'>
-                                        <button className="bg-amber-600 border-0 text-white p-3 px-4 rounded-lg">Login</button>
+                                        <button className="bg-amber-600 border-0 text-white p-2 md:p-3 px-1 md:px-4 rounded-lg text-sm md:text-xl">Login</button>
                                     </Link>
                                 </>
                         }

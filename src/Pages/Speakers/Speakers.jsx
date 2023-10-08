@@ -11,7 +11,7 @@ const Speakers = () => {
             <div className="pb-14">
                 <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/qrRP7WT/1.png)', backgroundSize: 'cover' }}>
                     <div className="hero-overlay bg-opacity-60"></div>
-                    <div className="hero-content text-center text-neutral-content py-28 md:py-36">
+                    <div className="hero-content text-center text-neutral-content py-28">
                         <div className="max-w-md lg:max-w-2xl">
                             <div className="text-center lg:w-1/2 mx-auto mb-3">
                                 <div className="flex gap-3 justify-center">
@@ -45,9 +45,9 @@ const Speakers = () => {
                                 <div className="w-2/3 lg:w-full text-white">
                                     <div className="flex gap-3 justify-center">
                                         <div>
-                                            <GiChemicalBolt className="text-2xl text-amber-500"></GiChemicalBolt>
+                                            <GiChemicalBolt className="text-2xl text-amber-600"></GiChemicalBolt>
                                         </div>
-                                        <p className="mb-3 text-xl">About the Event</p>
+                                        <p className="mb-3 text-white">About The Event</p>
                                     </div>
                                     <h1 className="mb-5 text-3xl lg:text-4xl">Have Not Booked Your Seat Yet <br /> Get Ticket Now</h1>
                                     <button className="btn bg-amber-600 border-0 text-white p-1 px-8 rounded-3xl hover:bg-white hover:border-0 hover:text-amber-600 mt-6">Purchase Ticket</button>

@@ -81,9 +81,9 @@ const SignUp = () => {
     return (
         <div className='bg-slate-900 py-10'>
             <div className="flex justify-center my-12 container mx-auto px-5">
-                <div className="bg-slate-950 rounded-xl w-full md:w-3/4 lg:w-2/4 p-8">
-                    <h2 className="text-3xl font-bold text-center pt-7 pb-5"><span className='text-amber-600'>SignUp</span> your account</h2>
-                    <form onSubmit={handleSignUp} className="card-body">
+                <div className="bg-slate-950 rounded-xl w-full md:w-3/4 lg:w-2/4 py-8">
+                    <h2 className="text-3xl font-bold text-center pt-10 pb-5"><span className='text-amber-600'>SignUp</span> your account</h2>
+                    <form onSubmit={handleSignUp} className="px-4 md:px-14">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Your Name</span>
@@ -122,9 +122,9 @@ const SignUp = () => {
 
                         <div className="flex gap-3 mt-5">
                             <div className='flex items-center'>
-                                <input className='checkbox checkbox-warning checkbox-sm' type="checkbox" name="terms" id="" />
+                                <input className='checkbox checkbox-warning checkbox-xs md:checkbox-sm' type="checkbox" name="terms" id="" />
                             </div>
-                            <label htmlFor="terms">Accept our terms and conditions</label>
+                            <label htmlFor="terms" className="text-xs md:text-lg">Accept our terms and conditions</label>
                         </div>
                         <div>
                             {
@@ -143,14 +143,14 @@ const SignUp = () => {
                         </div>
                         <div>
                             <button onClick={handleGoogleSignUp} className="btn btn-outline mt-5 mb-4 w-full">
-                                <FcGoogle className='text-xl'></FcGoogle>
-                                Continue with Google
+                                <FcGoogle className='text-xs md:text-xl'></FcGoogle>
+                                <span className="text-xs md:text-md">Continue with Google</span>
                             </button>
                         </div>
                     </form>
 
                     <div className="flex justify-center mb-4">
-                        <h2>Already have an account? <Link to='/login' className="text-amber-600 underline font-bold">Login</Link></h2>
+                        <h2 className="text-xs md:text-lg mt-6 md:mt-8 mb-6">Already have an account? <Link to='/login' className="text-amber-600 underline font-bold">Login</Link></h2>
                     </div>
                 </div>
             </div>
