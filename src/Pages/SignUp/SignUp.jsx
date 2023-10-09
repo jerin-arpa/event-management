@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 const SignUp = () => {
-    const { createUser, googleSignUp, setUserName } = useContext(AuthContext);
+    const { createUser, googleSignUp, setUserName, logOut } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
     const [termsError, setTermsError] = useState('');
     const [success, setSuccess] = useState('');
@@ -56,6 +56,11 @@ const SignUp = () => {
                     showConfirmButton: false,
                     timer: 1500
                 });
+                logOut()
+                    .then(result => {
+                        console.log(result.user)
+                    })
+                    .catch(() => { })
                 navigate('/');
             })
             .catch(() => {
@@ -75,7 +80,7 @@ const SignUp = () => {
         googleSignUp()
             .then(result => {
                 console.log(result.user);
-                navigate(location?.state ? location.state : '/');
+                navigate('/');
             })
             .catch(error => {
                 console.error(error);

@@ -58,9 +58,9 @@ const EventDetails = () => {
                         </div>
 
                         <div className="flex gap-10 mt-6">
-                            <button className='btn btn-outline'>Book Now</button>
+                            <button className='btn btn-warning btn-outline'>Book Now</button>
                             <Link to='/'>
-                                <button className='btn btn-outline'>GO Home</button>
+                                <button className='btn btn-warning btn-outline'>GO Home</button>
                             </Link>
                         </div>
                     </div>
