@@ -2,6 +2,7 @@ import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged,
 import PropTypes from 'prop-types';
 import { createContext, useEffect, useState } from 'react';
 import auth from '../firebase/firebase.config';
+import { updateProfile } from 'firebase/auth';
 
 
 export const AuthContext = createContext(null);
@@ -17,6 +18,25 @@ const AuthProvider = ({ children }) => {
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
     }
+
+
+    const setUserName = (name) => {
+        setLoading(true);
+        updateProfile(auth.currentUser, {
+            displayName: name
+        })
+            .then(() => {
+                setUser({
+                    ...user,
+                    displayName: name,
+                });
+                console.log('Display name updated successfully');
+            })
+            .catch(error => {
+                console.error('Error updating display name:', error);
+            });
+    }
+
 
     const signIn = (email, password) => {
         setLoading(true);
@@ -54,6 +74,7 @@ const AuthProvider = ({ children }) => {
         googleSignUp,
         logOut,
         signIn,
+        setUserName,
     };
 
     return (

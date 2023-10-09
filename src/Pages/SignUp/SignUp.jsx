@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 
 const SignUp = () => {
-    const { createUser, googleSignUp } = useContext(AuthContext);
+    const { createUser, googleSignUp, setUserName } = useContext(AuthContext);
     const [signUpError, setSignUpError] = useState('');
     const [termsError, setTermsError] = useState('');
     const [success, setSuccess] = useState('');
@@ -48,6 +48,7 @@ const SignUp = () => {
 
         createUser(email, password)
             .then(() => {
+                setUserName(name)
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
