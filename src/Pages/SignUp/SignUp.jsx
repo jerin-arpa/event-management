@@ -57,8 +57,14 @@ const SignUp = () => {
                 });
                 navigate('/');
             })
-            .catch(error => {
-                console.error(error);
+            .catch(() => {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'error',
+                    title: 'Email is already used, try with another one or login',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             })
     }
 
