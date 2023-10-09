@@ -26,10 +26,6 @@ const AuthProvider = ({ children }) => {
             displayName: name
         })
             .then(() => {
-                setUser({
-                    ...user,
-                    displayName: name,
-                });
                 console.log('Display name updated successfully');
             })
             .catch(error => {

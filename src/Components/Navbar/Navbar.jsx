@@ -104,9 +104,9 @@ const Navbar = () => {
                                                     <hr className="my-7 w-1/2" />
                                                 </div>
                                                 <div className="text-center">
-                                                    <h2 className="text-sm md:text-2xl mb-2 text-white"><span className="text-amber-600">Name:</span> {user.displayName
+                                                    <h2 className="text-sm md:text-xl mb-2 text-white"><span className="text-amber-600">Name:</span> {user.displayName
                                                     }</h2>
-                                                    <p className="text-sm  md:text-lg mb-5 text-white">{user.email}</p>
+                                                    <p className="text-sm  md:text-lg mb-5 text-white"><span className="text-amber-600">Email:</span> {user.email}</p>
                                                 </div>
                                             </div>
                                         </div>

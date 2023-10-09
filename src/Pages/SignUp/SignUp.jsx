@@ -61,7 +61,7 @@ const SignUp = () => {
                         console.log(result.user)
                     })
                     .catch(() => { })
-                navigate('/');
+                navigate('/login');
             })
             .catch(() => {
                 Swal.fire({

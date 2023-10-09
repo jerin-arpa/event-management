@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: A: `{}`
 
-<i>As the vairable named "greeting" doesn't match with the initialized variable "greetign", the variable "greetign" will get assigned as the global scope. Thus, we can see the an empty object in the console. Also, the variable called "greeting" will be declared but won't be use anywhere. </i>
+<i>As the variable named "greeting" doesn't match with the initialized variable "greetign", the variable "greetign" will get assigned as the global scope. Thus, we can see the an empty object in the console. Also, the variable called "greeting" will be declared but won't be use anywhere. </i>
 
 </p>
 </details>
