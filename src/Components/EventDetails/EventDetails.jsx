@@ -10,7 +10,7 @@ const EventDetails = () => {
 
     return (
         <div className=" bg-slate-900 py-10 text-white">
-            <div className="flex gap-10 container mx-auto my-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 container mx-auto px-5 my-10">
                 <img className="rounded-xl" src={event.image} alt="" />
 
 
